@@ -19,8 +19,8 @@ public class Topic_01_Statement_Loop {
             } catch (NumberFormatException ex) {
             }
         }
-        System.out.println("Min value of arrayExercise is " + minNumber);
-        System.out.println("Max value of arrayExercise is " + maxNumber + "\n");
+        System.out.println("Min value of array is " + minNumber);
+        System.out.println("Max value of array is " + maxNumber + "\n");
 
     }
 
