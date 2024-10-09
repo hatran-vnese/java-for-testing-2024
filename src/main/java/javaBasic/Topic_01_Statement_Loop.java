@@ -7,7 +7,7 @@ public class Topic_01_Statement_Loop {
 
         int minNumber = Integer.valueOf(array[0]);
         int maxNumber = Integer.valueOf(array[0]);
-        System.out.println("========Counting minNumber and maxNumber========");
+        System.out.println("========Ex_01_FindMaxAndMinNumbers");
         for (String item : array) {
             try {
                 if (minNumber > Integer.valueOf(item)) {
@@ -25,7 +25,7 @@ public class Topic_01_Statement_Loop {
     }
 
     public static void Ex_02_CountEvenAndOddNumbers(String[] array) {
-        System.out.println("========Counting even and odd========");
+        System.out.println("========Ex_02_CountEvenAndOddNumbers========");
 
         int even = 0;
         int odd = 0;
@@ -47,7 +47,7 @@ public class Topic_01_Statement_Loop {
     }
 
     public static void Ex_03_FindLongestStringAndNonNumericStrings(String[] array) {
-        System.out.println("========Finding longest string and num Of NonNumeric Strings========\n");
+        System.out.println("========Ex_03_FindLongestStringAndNonNumericStrings========");
         int maxLength = 0;
         int numOfNonNumericString = 0;
         for (int i = 0; i < array.length; i++) {
@@ -63,7 +63,7 @@ public class Topic_01_Statement_Loop {
             } catch (NumberFormatException ex) {
             }
         }
-        System.out.println("The longest string is " + maxLength + ", the value is:");
+        System.out.println("The longest string length is " + maxLength + ", the string is:");
         for (String item : array) {
 
             try {
@@ -74,7 +74,7 @@ public class Topic_01_Statement_Loop {
             }
         }
 
-        System.out.println("\nThe number of Non-Numeric String in the array is " + numOfNonNumericString);
+        System.out.println("The number of Non-Numeric String in the array is " + numOfNonNumericString);
     }
 
     public static boolean isEven(int i) {
