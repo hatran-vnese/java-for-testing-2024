@@ -76,11 +76,11 @@ public class Topic_01_Statement_Loop {
         System.out.println("The number of Non-Numeric String in the array is " + numOfNonNumericString);
     }
 
-    public static boolean isEven(int i) {
+    public boolean isEven(int i) {
         return i % 2 == 0;
     }
 
-    public static boolean isNumeric(String str) {
+    public boolean isNumeric(String str) {
         return str.matches("-?\\d+(\\.\\d+)?");  //match a number with optional '-' and decimal.
     }
 
