@@ -2,77 +2,76 @@ package javaBasic;
 
 public class Topic_01_Statement_Loop {
 
+    String[] array = {"3", "5", "apple", "2", "8", "10", "Banana", "1", "6", "4", "Cherry", "7", "9"};
 
-    public static void Ex_01_FindMaxAndMinNumbers(String[] array) {
+    public void printArray() {
 
-        int minNumber = Integer.valueOf(array[0]);
-        int maxNumber = Integer.valueOf(array[0]);
+        System.out.print("We have String array: ");
+        for (String str : array)
+            System.out.print("|" + str);
+        System.out.println("\n");
+    }
+
+    public void Ex_01_FindMaxAndMinNumbers() {
+
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
         System.out.println("========Ex_01_FindMaxAndMinNumbers");
-        for (String item : array) {
+        for (String str : array) {
             try {
-                if (minNumber > Integer.valueOf(item)) {
-                    minNumber = Integer.valueOf(item);
-                }
-                if (maxNumber < Integer.valueOf(item)) {
-                    maxNumber = Integer.valueOf(item);
-                }
+                int number = Integer.valueOf(str);
+                if (number < min)
+                    min = number;
+
+                if (number > max)
+                    max = number;
+
             } catch (NumberFormatException ex) {
             }
         }
-        System.out.println("Min value of array is " + minNumber);
-        System.out.println("Max value of array is " + maxNumber + "\n");
+        System.out.println("Min value of array is " + min);
+        System.out.println("Max value of array is " + max + "\n");
 
     }
 
-    public static void Ex_02_CountEvenAndOddNumbers(String[] array) {
-        System.out.println("========Ex_02_CountEvenAndOddNumbers========");
+    public void Ex_02_CountEvenAndOddNumbers() {
 
+        System.out.println("========Ex_02_CountEvenAndOddNumbers========");
         int even = 0;
         int odd = 0;
-        int item = 0;
-        while (item < array.length) {
+        int i = 0;
+        while (i < array.length) {
             try {
-                if (isEven(Integer.valueOf(array[item]))) {
-                    even = even + 1;
-                } else {
-                    odd = odd + 1;
-                }
+                if (isEven(Integer.valueOf(array[i])))
+                    even++;
+                else
+                    odd++;
+
             } catch (NumberFormatException ex) {
             }
-            item = item + 1;
+            i++;
         }
         System.out.println("Number of even is " + even);
         System.out.println("Number of odd is " + odd + "\n");
 
     }
 
-    public static void Ex_03_FindLongestStringAndNonNumericStrings(String[] array) {
+    public void Ex_03_FindLongestStringAndNonNumericStrings() {
+
         System.out.println("========Ex_03_FindLongestStringAndNonNumericStrings========");
-        int maxLength = 0;
+        String longestString = "";
         int numOfNonNumericString = 0;
-        for (int i = 0; i < array.length; i++) {
-
+        for (String str : array) {
+            if (longestString.length() < str.length()) {
+                longestString = str;
+            }
             try {
-                if (maxLength < array[i].length()) {
-                    maxLength = array[i].length();
-                }
-                if (!isNumeric(array[i])) {
-                    numOfNonNumericString = numOfNonNumericString + 1;
-                }
-
+                Integer.valueOf(str);
             } catch (NumberFormatException ex) {
+                numOfNonNumericString++;
             }
         }
-        System.out.println("The longest string length is " + maxLength + ", the string is:");
-        for (String item : array) {
-
-            try {
-                if (item.length() == maxLength) {
-                    System.out.println(item);
-                }
-            } catch (NumberFormatException ex) {
-            }
-        }
+        System.out.println("The longest string is " + longestString);
 
         System.out.println("The number of Non-Numeric String in the array is " + numOfNonNumericString);
     }
@@ -84,4 +83,5 @@ public class Topic_01_Statement_Loop {
     public static boolean isNumeric(String str) {
         return str.matches("-?\\d+(\\.\\d+)?");  //match a number with optional '-' and decimal.
     }
+
 }
