@@ -8,7 +8,6 @@ import java.util.Objects;
 public class Main {
 
     public static void main(String[] args) {
-        //Topic_01_Statement_Loop tp1 = new Topic_01_Statement_Loop();
         Student student1 = new Student("1", "Ha");
         Student student2 = new Student("2", "Anh");
         Student student3 = new Student("3", "Huyen");
