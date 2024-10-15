@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8766293f-ce88-4f39-992b-223c5446116b" name="Changes" comment="Update Topic_01_Statement_Loop">
-      <change afterPath="$PROJECT_DIR$/src/main/java/javaBasic/Topic_02_Map_HashMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javaBasic/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javaBasic/Topic_02_HashMap_ArrayList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/javaBasic/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaBasic/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javaBasic/Topic_01_Statement_Loop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaBasic/Topic_01_Statement_Loop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaBasic/Topic_01_Statement_Loop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaBasic/Topic_01_Statement_Loop_Array.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaBasic/Topic_02_Map_HashMap.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +94,21 @@
       <option name="project" value="LOCAL" />
       <updated>1728455523774</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update Topic_01_Statement_Loop">
+      <created>1728705722233</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728705722233</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Update Topic_01_Statement_Loop">
+      <created>1728705782487</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728705782487</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

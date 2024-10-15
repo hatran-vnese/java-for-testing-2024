@@ -1,6 +1,6 @@
 package javaBasic;
 
-public class Topic_01_Statement_Loop {
+public class Topic_01_Statement_Loop_Array {
 
     String[] array = {"3", "5", "apple", "2", "8", "10", "Banana", "1", "6", "4", "Cherry", "7", "9"};
 
